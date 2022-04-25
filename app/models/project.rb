@@ -1,4 +1,5 @@
 class Project < ApplicationRecord
-    has_many: employees
-    belongs_to: lead, class_name: "Employee", foreign_key: "project_lead_id"
+   # has_many: employees
+    has_many :employee_projects
+    has_many :employees, :through=> :employee_projects
 end
