@@ -1,3 +1,3 @@
 class Leave < ApplicationRecord
-    belongs_to: employee
+  has_many :employee_leaves
 end

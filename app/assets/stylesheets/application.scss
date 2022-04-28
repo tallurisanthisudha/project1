@@ -30,9 +30,9 @@
 
  .index-sub-container{
     background-color: rgb(207, 157, 207);
-    height: 45vh;
+    height: 35vh;
     width: 40vw;
-    border-radius: 20px;
+    border-radius: 100px;
     align-items: center;
     text-align: center;
  }
@@ -43,6 +43,24 @@
    font-weight: bold;
    font-family: cursive;
    margin: 15px;
-   
-
+ }  
+.color{
+  background-image: linear-gradient(to bottom, rgb(126, 173, 192),rgb(192, 116, 211));
+  height: 100vh;
+  margin-top: -16px;
+  }
+  .navstyly{
+    background-color: alpha($color: #2fc22f);
+  }
+ .box{
+   height:150px;
+   width: 500px;
+   background-color: rgb(31, 17, 80);
+   margin-right: 100px;
+   text-align: center;
+   align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
  }

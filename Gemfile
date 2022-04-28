@@ -14,10 +14,13 @@ gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
+#device
+gem "devise"
 
 gem "pundit"
 #bootstrap
 gem 'bootstrap', '~> 5.1.3'
+
 gem 'jquery-rails'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :employees
   #get 'home/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
   get 'index', to: 'home#index'
   get 'employee',to: 'home#employee'
   get 'hr',to: 'home#hr'
+  get 'signnedin', to: 'home#signnedin'
+  
 
   
 end
