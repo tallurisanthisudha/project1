@@ -9,7 +9,14 @@ Rails.application.routes.draw do
   get 'employee',to: 'home#employee'
   get 'hr',to: 'home#hr'
   get 'signnedin', to: 'home#signnedin'
+  get 'dashboardopen', to: 'home#dashboardopen'
+  get 'leavespage', to: 'home#leavespage'
   
-
+  get 'adminhome', to: 'admin#adminhome'
+  get 'holiday', to: 'admin#holiday'
+  get 'employeemanagement', to: 'admin#employeemanagement'
+  get 'designationmanagement', to: 'admin#designationmanagement'
+  get 'projectmanagement', to: 'admin#projectmanagement'
+  post 'adminhome', to: 'admin#create'
   
 end

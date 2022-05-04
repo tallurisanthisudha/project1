@@ -22,6 +22,9 @@ gem "pundit"
 gem 'bootstrap', '~> 5.1.3'
 
 gem 'jquery-rails'
+#chartkick
+gem 'chartkick'
+gem 'groupdate'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"

@@ -18,7 +18,7 @@
 
 
  .index-main-container{
-   background-image: url(https://image.shutterstock.com/image-vector/concept-new-team-member-welcome-260nw-1327428803.jpg);
+  background-image: linear-gradient(to right, rgb(38, 172, 116), white,rgb(32, 126, 105));
    height: 100vh;
    display: flex;
    flex-direction: column;
@@ -53,14 +53,114 @@
     background-color: alpha($color: #2fc22f);
   }
  .box{
-   height:150px;
-   width: 500px;
-   background-color: rgb(31, 17, 80);
-   margin-right: 100px;
+   height:26vh;
+   width: 16vw;
+   background-color: rgb(27, 27, 95);
+   border-style: none;
+   
+  color: white;
    text-align: center;
    align-items: center;
   display:flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
  }
+ .graphcontainer{
+   width:75vw;
+   height: 350px;
+   background-color: rgb(213, 236, 236);
+   margin-left:20px;
+   margin-bottom: 4px;
+  
+ }
+ .graphcontainer1{
+   width: 37vw;
+   height: 230px;
+   background-color: rgb(213, 236, 236);
+   margin-left: 20px;
+
+ }
+
+.loginstyly{
+  height: 100vh;
+  background-color: white;
+  display:flex;
+  flex-direction: row;
+}
+.loginbtn{
+  background-color: blueviolet;
+  border-radius: 10px;
+  height: 30px;
+  width: 250px;
+  font-size: 16px;
+  color: white; 
+  margin-top: 5px;
+
+}
+.image{
+  height: 500px; 
+  width: 500px;
+  
+
+}
+.loginimage{
+  background-color: azure;
+  margin-left: 300px;
+}
+.loginsubstyly{
+  margin-top: 15vh;
+  margin-left: 15vw;
+}
+.leavespage{
+  width: 24vw;
+   height: 120px;
+   background-color: rgb(213, 236, 236);
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 50px;
+
+}
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+
+}
+.right-container{
+  display: flex;
+  flex-direction: column;
+}
+.formcontainer{
+  display: flex;
+  flex-direction: row;
+}
+.loginbutton{
+  background-color: blueviolet;
+  border-style: none;
+  color: white;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.leave-main-cont{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  
+}
+.leaveheads{
+  margin-left: 80px;
+}
+.employeemaincont{
+  display: flex;
+  flex-direction: row;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 20px;
+}
+.dashboard-page{
+  
+}
