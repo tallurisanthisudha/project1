@@ -18,7 +18,7 @@
 
 
  .index-main-container{
-  background-image: linear-gradient(to right, rgb(38, 172, 116), white,rgb(32, 126, 105));
+  background-image: linear-gradient(to right, lavender,rgb(104, 104, 121), rgb(129, 84, 129));
    height: 100vh;
    display: flex;
    flex-direction: column;
@@ -133,6 +133,7 @@
 .formcontainer{
   display: flex;
   flex-direction: row;
+  margin-left: 150px;
 }
 .loginbutton{
   background-color: blueviolet;
@@ -155,6 +156,8 @@
 .employeemaincont{
   display: flex;
   flex-direction: row;
+
+
 }
 table, th, td {
   border: 1px solid black;
@@ -162,5 +165,40 @@ table, th, td {
   padding: 20px;
 }
 .dashboard-page{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  font-size: 50px;
+  margin-left: 30px;
   
+}
+.addnewemp{
+  margin-left: 500px;
+}
+.empsubcon{
+  margin-left: 305px;
+}
+.leavesubcont{
+  margin-left: 300px;
+  margin-top: 60px;
+}
+.designationsubcon{
+  margin-left: 300px;
+  margin-top: 30px;
+}
+.paragraph{
+  font-size: large;
+}
+.navigation-button{
+  border-radius: 80px;
+  margin-right: 10px;
+  color: white;
+  background-color: rgb(187, 116, 116);
+  border-style: none;
+  height: 40px;
+  width: 40px;
+}
+.formbottomcont{
+  margin-top: 40px;
+  margin-left: 30px;
 }
