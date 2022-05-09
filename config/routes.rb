@@ -13,11 +13,23 @@ Rails.application.routes.draw do
   get 'leavespage', to: 'home#leavespage'
   
   get 'adminhome', to: 'admin#adminhome'
-  get 'holiday', to: 'admin#holiday'
+
   get 'employeemanagement', to: 'admin#employeemanagement'
   get 'designationmanagement', to: 'designation#designationmanagement'
   post 'designationmanagement', to: 'designation#create'
-  get 'projectmanagement', to: 'admin#projectmanagement'
-  post 'adminhome', to: 'admin#create'
+ 
+  post 'leaveform', to: 'admin#create'
+  get 'designationform', to: "designation#designationform"
+  get 'leaveform', to: "admin#leaveform"
   
+
+  get 'projectmanagement', to: 'project#projectmanagement'
+  get 'projectform', to: 'project#projectform'
+  post "projectform", to: 'project#create'
+
+  get 'holiday', to: 'holidays#holiday'
+  get 'holidaysform', to: 'holidays#holidaysform'
+  post "holidaysform", to: 'holidays#create'
+
+
 end

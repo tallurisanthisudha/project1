@@ -1,23 +1,23 @@
 <div class='employeemaincont'>
 <%=render "admin/adminmenu" %>
 <div class="empsubcon">
-<h1>Designation Management</h1>
+<h1>HOLIDAYS</h1>
 <table class="table">
     <tr>
       <th>Name</th>
-      <th>Description</th>
+      <th>Date</th>
       <th>Edit</th>
     </tr>
-<% @designations.each do |designation| %>
+<% @holidays.each do |holiday| %>
     <tr>
      <td>
-     <%= designation.name%>
+     <%= holiday.name%>
      </td>
      <td>
-     <%= designation.description%>
+     <%= holiday.date%>
      </td>
     <% end %>
 </table>
-<%= button_to 'Add Designation', designationform_path,method: :get,class:"loginbutton" %>
+<%= button_to 'Add Holiday', holidaysform_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

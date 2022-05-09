@@ -22,4 +22,8 @@ class DesignationController < ApplicationController
         params.permit(:name , :description)
         
         end
+
+        def designationmanagement
+            @designations =Designation.all
+        end    
 end

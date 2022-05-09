@@ -1,25 +1,23 @@
-<div class="d-flex flex-row">
+<div class='employeemaincont'>
 <%=render "admin/adminmenu" %>
-<div class="leavesubcont">
-<h1>LEAVE MANAGEMENT</h1>
-<%= form_with  model: @leave do |f| %>
-    <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
-    </div>
- 
-    <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description, autofocus: true, autocomplete: "description" %>
-    </div>
-
-    <div class="actions ">
-        <%= f.submit "Add",class:"loginbutton" %>
-    </div>
-
-
-  <% end %>
-
-
+<div class="empsubcon">
+<h1>Leave Management</h1>
+<table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Edit</th>
+    </tr>
+<% @leaves.each do |leave| %>
+    <tr>
+     <td>
+     <%= leave.name%>
+     </td>
+     <td>
+     <%= leave.description%>
+     </td>
+    <% end %>
+</table>
+<%= button_to 'Add Leave', leaveform_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

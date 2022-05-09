@@ -15,5 +15,9 @@ class AdminController < ApplicationController
     @employees = Employee.all
   end
     
+  def adminhome
+    @leaves = Leave.all
+  end
+
 end
   
