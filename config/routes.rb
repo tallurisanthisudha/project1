@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "home#index"
-  get 'index', to: 'home#index'
+  root "home#display"
+  get 'display', to: 'home#display'
   get 'employee',to: 'home#employee'
   get 'hr',to: 'home#hr'
   get 'signnedin', to: 'home#signnedin'
@@ -15,21 +15,24 @@ Rails.application.routes.draw do
   get 'adminhome', to: 'admin#adminhome'
 
   get 'employeemanagement', to: 'admin#employeemanagement'
-  get 'designationmanagement', to: 'designation#designationmanagement'
-  post 'designationmanagement', to: 'designation#create'
+  get 'index', to: 'designations#index'
+  #post 'designationmanagement', to: 'designation#create'
  
-  post 'leaveform', to: 'admin#create'
-  get 'designationform', to: "designation#designationform"
+  #post 'leaveform', to: 'admin#create'
+  #get 'designationform', to: "designation#designationform"
   get 'leaveform', to: "admin#leaveform"
   
 
   get 'projectmanagement', to: 'project#projectmanagement'
   get 'projectform', to: 'project#projectform'
-  post "projectform", to: 'project#create'
+  #post "projectform", to: 'project#create'
 
-  get 'holiday', to: 'holidays#holiday'
-  get 'holidaysform', to: 'holidays#holidaysform'
-  post "holidaysform", to: 'holidays#create'
+  #get 'holiday', to: 'holidays#holiday'
+  #get 'holidaysform', to: 'holidays#holidaysform'
+  #post "holidaysform", to: 'holidays#create'
+  #post 'designations/new', to: "designations#create"
 
+  resources :designations
+  resources :holidays
 
 end

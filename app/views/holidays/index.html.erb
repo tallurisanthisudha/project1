@@ -7,6 +7,7 @@
       <th>Name</th>
       <th>Date</th>
       <th>Edit</th>
+      <th>Delete</th>
     </tr>
 <% @holidays.each do |holiday| %>
     <tr>
@@ -16,8 +17,14 @@
      <td>
      <%= holiday.date%>
      </td>
+     <td>
+     <%= link_to "Edit", edit_holiday_path(holiday),class:"btn btn-primary" %>
+     </td>
+     <td>
+     <%= button_to "Delete", holiday_path(holiday),method: :delete,class:"btn btn-secondary" %>
+     </td>
     <% end %>
 </table>
-<%= button_to 'Add Holiday', holidaysform_path,method: :get,class:"loginbutton" %>
+<%= button_to 'Add Holiday', new_holiday_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

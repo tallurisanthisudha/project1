@@ -7,17 +7,24 @@
       <th>Name</th>
       <th>Description</th>
       <th>Edit</th>
+      <th>Delete</th>
     </tr>
 <% @designations.each do |designation| %>
     <tr>
      <td>
-     <%= designation.name%>
+     <%= designation.last_name%>
      </td>
      <td>
      <%= designation.description%>
      </td>
+     <td>
+     <%= link_to "Edit", edit_designation_path(designation),class:"btn btn-primary" %>
+     </td>
+     <td>
+     <%= button_to "Delete", designation_path(designation),method: :delete,class:"btn btn-secondary" %>
+     </td>
     <% end %>
 </table>
-<%= button_to 'Add Designation', designationform_path,method: :get,class:"loginbutton" %>
+<%= button_to 'Add Designation', new_designation_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

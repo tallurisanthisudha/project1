@@ -9,7 +9,7 @@ has_one :address
 has_many :attendances
 has_many :employee_leaves
 #has_many :leaves, :through=> :employee_leaves
-has_one :designation, :through=> :employee_detail
+#has_one :designation, :through=> :employee_detail
 #has_many :employee_projects
 #has_many :projects, :through=> :employee_projects
 belongs_to:role

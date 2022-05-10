@@ -6,7 +6,8 @@
     <tr>
       <th>Project_Name</th>
       <th>Project_Description</th>
-      <th>Project_Edit</th>
+      <th>Edit_project</th>
+      <th>Delete_project</th>
     </tr>
 <% @projects.each do |project| %>
     <tr>
@@ -18,6 +19,6 @@
      </td>
 <% end %>
 </table>
-<%= button_to 'Add Project', projectform_path,method: :get,class:"submit-button" %>
+<%= button_to 'Add Project', projectform_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

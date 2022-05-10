@@ -1,30 +1,54 @@
 class HolidaysController < ApplicationController
+    before_action :find_holiday, only:[:edit, :destroy, :update]
+
+    def find_holiday
+        @holiday = Holiday.find(params[:id])
+    end
+
+    def edit
+    end
+
+    def destroy
+        @holiday.destroy
+        redirect_to index_path
+
+    end
+
+    def update
+        if @holiday.update(holiday_params)
+            redirect_to index_path
+        else
+            render "edit"
+        end
+    end
 
     def new
 
-        @holidays = Holiday.new
+        @holiday = Holiday.new
         
-        end
+    end
         
-        def create
+    def create
         
         @holidays= Holiday.new(holidaysparams)
         
-        @holidays.save
-        
-        render plain: @holidays.errors.inspect
-        
-        #redirect_to holiday_path
-        
+        if @holidays.save
+            redirect_to holidays_path
+        else
+            render 'new'
         end
+        #render plain: @holidays.errors.inspect
         
-        def holidaysparams
         
-        params.permit(:name , :date , :year)
+    end
         
-        end
+    def holidaysparams
+        
+        params.require(:holiday).permit(:name , :date , :year)
+        
+    end
 
-        def holiday
+        def index
             @holidays =Holiday.all
         end 
 end
