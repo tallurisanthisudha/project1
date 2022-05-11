@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   get 'dashboardopen', to: 'home#dashboardopen'
   get 'leavespage', to: 'home#leavespage'
   
-  get 'adminhome', to: 'admin#adminhome'
+  #get 'adminhome', to: 'admin#adminhome'
 
   get 'employeemanagement', to: 'admin#employeemanagement'
   get 'index', to: 'designations#index'
@@ -20,11 +20,11 @@ Rails.application.routes.draw do
  
   #post 'leaveform', to: 'admin#create'
   #get 'designationform', to: "designation#designationform"
-  get 'leaveform', to: "admin#leaveform"
+  #get 'leaveform', to: "admin#leaveform"
   
 
-  get 'projectmanagement', to: 'project#projectmanagement'
-  get 'projectform', to: 'project#projectform'
+  #get 'projectmanagement', to: 'project#projectmanagement'
+  #get 'projectform', to: 'project#projectform'
   #post "projectform", to: 'project#create'
 
   #get 'holiday', to: 'holidays#holiday'
@@ -34,5 +34,6 @@ Rails.application.routes.draw do
 
   resources :designations
   resources :holidays
-
+  resources :projectmanagements
+  resources :leaves
 end

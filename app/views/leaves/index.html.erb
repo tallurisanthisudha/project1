@@ -17,8 +17,14 @@
      <td>
      <%= leave.description%>
      </td>
+     <td>
+     <%= link_to "Edit", edit_leafe_path(leave),class:"btn btn-primary" %>
+     </td>
+     <td>
+     <%= button_to "Delete", leafe_path(leave),method: :delete,class:"btn btn-secondary" %>
+     </td>
     <% end %>
 </table>
-<%= button_to 'Add Leave', leaveform_path,method: :get,class:"loginbutton" %>
+<%= button_to 'Add Leave', new_leafe_path,method: :get,class:"loginbutton" %>
 </div>
 </div>

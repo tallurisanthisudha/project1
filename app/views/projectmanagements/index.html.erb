@@ -17,8 +17,15 @@
      <td>
      <%= project.description%>
      </td>
+     <td>
+     <%= link_to "Edit", edit_project_path(project),class:"btn btn-primary" %>
+     </td>
+     <td>
+     <%= button_to "Delete", project_path(project),method: :delete,class:"btn btn-secondary" %>
+     </td>
+     </tr>
 <% end %>
 </table>
-<%= button_to 'Add Project', projectform_path,method: :get,class:"loginbutton" %>
+<%= button_to 'Add Project', new_projectmanagement_path,method: :get,class:"loginbutton" %>
 </div>
 </div>
